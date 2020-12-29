@@ -1,0 +1,18 @@
+
+<div class="card mb-4">
+    <div class="card-body">
+      <h5 class="card-title text-center">{{jobOffer.title}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted text-center">{{jobOffer.category}}</h6>
+      <p class="card-text">{{jobOffer.description}}</p>    
+      <p class="card-text">{{jobOffer.typeOffer}}</p>
+      <p>Likes :{{ jobOffer.like }}</p>
+      <div *ngIf="isThisCompany">
+        <a type="button" class="btn-outline-success m-3"
+        [routerLink]="['/jobs','edit',jobOffer.id]">
+          Edit</a>
+        <button type="button" class="btn-outline-danger-2" (click)="jobDeleted.emit(jobOffer.id)">Delete</button>
+      </div>
+      <button type="button" class="btn-outline-primary m-2" (click)="giveALike()" [disabled]="buttonDisabled">Like</button>
+    </div>
+  </div>
+  

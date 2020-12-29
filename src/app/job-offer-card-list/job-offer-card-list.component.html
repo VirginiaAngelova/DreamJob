@@ -1,0 +1,6 @@
+<h1 class="text-center">Jobs</h1>
+<a routerLink="/jobs/create" *ngIf="isThisCompany"> Create new job</a>
+<app-job-offer-card-view [jobOffer]="jobOffer" 
+                         (jobSelected)="onJobSelect($event)"
+                         (jobDeleted)="onJobDelete($event)"
+                         ></app-job-offer-card-view>

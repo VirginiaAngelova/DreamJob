@@ -1,0 +1,69 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Ivan.P",
+      "email": "ivan.petrov@gmail.com",
+      "password": "ivan123",
+      "category": "customer"
+    },
+    {
+      "id": 2,
+      "username": "Maria123 ",
+      "email": "maria123@gmail.com",
+      "password": "maria.ivanova123",
+      "category": "customer"
+    },
+    {
+      "id": 3,
+      "username": "Traian.333",
+      "email": "traian333333@gmail.com",
+      "password": "somethingCool",
+      "category": "customer"
+    },
+    {
+      "name": "Virdzhinia Angelova",
+      "username": "Virdzhinia4",
+      "email": "virginia.ang@abv.bg",
+      "password": "123456",
+      "rePassword": "123456",
+      "category": "customer",
+      "id": 4
+    },
+    {
+      "name": "ScaleFocus",
+      "username": "ScaleFocus",
+      "email": "ScaleFocus@gmailcom",
+      "password": "scalefocus",
+      "rePassword": "scalefocus",
+      "category": "company",
+      "id": 5
+    },
+    {
+      "name": "Virdzhinia Angelova",
+      "username": "Virdzhinia",
+      "email": "virginia.angelova7@abv.bg",
+      "password": "123456",
+      "rePassword": "123456",
+      "id": 6
+    }
+  ],
+  "jobOffer": [
+    {
+      "title": "PHP developer",
+      "description": "something",
+      "typeOffer": "remote",
+      "category": "Development",
+      "like": 0,
+      "id": 1
+    },
+    {
+      "title": "Front end ",
+      "description": "HTML, CSS,Bootstrap,JS(Angular)",
+      "typeOffer": "full time",
+      "category": "Development",
+      "like": 0,
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+
+<h3>{{ !jobOffer.id ? 'Create new job' : 'Update'}}</h3>
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text"
+             class="form-control"
+             id="title"
+             formControlName="title"
+             placeholder="Job title">
+    </div>
+  
+    <div class="form-group">
+      <label for="descriptiont">Description</label>
+      <input type="text"
+             class="form-control"
+             id="description"
+             formControlName="description"
+             placeholder="Enter some description...">
+    </div>
+    <div class="form-group">
+        <label for="typeOffer">Type offer</label>
+        <input type="text"
+               class="form-control"
+               id="typeOffer"
+               formControlName="typeOffer"
+               placeholder="Enter the type of the job offer..">
+    </div>
+    <div class="form-group">
+        <label for="category">Category</label>
+        <input type="text"
+               class="form-control"
+               id="category"
+               formControlName="category"
+               placeholder="Enter the category of the job offer..">
+    </div>
+   <div class="form-group">
+    <button type="submit" class="btn btn-primary">
+      {{ !jobOffer.id ? 'Add' : 'Update'}}
+    </button>
+    <a routerLink='/jobs' class="btn btn-default">
+      Cancel
+    </a>
+    </div>
+  </form>
+  

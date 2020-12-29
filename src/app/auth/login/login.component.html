@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-md-12">
+        <h3 class="text-primary text-center">Login</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <p *ngIf="erorrMessage" class="text-danger text-center">{{erorrMessage}}</p>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter username"
+                    formControlName="username" />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter password"
+                    formControlName="password" />
+            </div>
+            <div class="form-froup">
+                <button type="submit" class="btn btn-primary">Login</button>
+                <a class="btn btn-light ml-2" routerLink="/register">Sign up</a>
+            </div>
+
+        </form>
+    </div>
+</div>
